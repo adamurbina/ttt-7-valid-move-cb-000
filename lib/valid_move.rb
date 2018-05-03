@@ -16,7 +16,7 @@ def valid_move?(board, index)
     if !((0..8).include?(index))
         return false
     end
-    if position_taken(board,index)
+    if position_taken?(board,index)
         return false
     end
 
