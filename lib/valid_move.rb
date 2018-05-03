@@ -13,7 +13,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-    if !(index.in?(0..8)) || position_taken(board, index)
+    if !((0..8).include?(index)) || position_taken(board, index)
         return false
     else
         return true
